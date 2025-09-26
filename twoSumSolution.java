@@ -6,7 +6,7 @@ public class twoSumSolution{
         Map<Integer,Integer> hi = new HashMap<>();
         for(int i = 0; i < nums.length; i++){
             int num = nums[i];
-            if(hi.containsKey(target-num)){
+            if(hi.containsKey(target-num)){ 
                 return new int[] {i, hi.get(target-num)};
             }
             hi.put(num, i);
