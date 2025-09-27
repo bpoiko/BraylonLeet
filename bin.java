@@ -2,6 +2,7 @@ import java.util.*;
 
 
 public class bin{
+  
     public boolean searchMatrix(int[][]matrix, int target){
         int low = 0;
         int high = (matrix.length * matrix[0].length) - 1;
