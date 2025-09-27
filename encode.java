@@ -12,7 +12,7 @@ public class encode{
     public List<String> decode(String str) {
             List<String> decoded = new ArrayList<>();
             int i = 0;
-            int j = i;
+            int j = 0;
             int n = str.length();
             while(i < n){
                 j = i;
