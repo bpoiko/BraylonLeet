@@ -8,7 +8,7 @@ public class longest{
         }
 
         int longest = 0;
-        for(int n : numba){
+        for(int n : numba){ // n-1 found? consecutive!
             if(!numba.contains(n-1)){
                 int length = 1;
                 while(numba.contains(n + length)){
