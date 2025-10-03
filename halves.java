@@ -25,7 +25,7 @@ class Solution {
         
         while(second != null){
             ListNode temp = second.next;
-            second.next = prev;
+            second.next = prev; // pointer reversal so that we're poinitng backwards!
             prev = second;
             second = temp;
         }
