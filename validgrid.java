@@ -13,7 +13,7 @@ public class validgrid{
 
         for(int r = 0; r < board.length; r++){
             for(int c = 0; c < board[0].length; c++){
-                char val = board[r][c];
+                char val = board[r][c]; // think m row, n columns
                 if(val == '.'){
                     continue;
                 }
@@ -27,7 +27,7 @@ public class validgrid{
                 if(!columnStorage[c].add(val)) return false;
                 columnStorage[c].add(val);
 
-                int boxIndex = (r / 3 ) * 3 + (c / 3);
+                int boxIndex = (r / 3 ) * 3 + (c / 3); // box isolation
                 if(!boxStorage[boxIndex].add(val)) return false;
                 boxStorage[boxIndex].add(val);
 
