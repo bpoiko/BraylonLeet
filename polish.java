@@ -14,6 +14,7 @@ class polishSolution {
             }
             else if(c.equals("*")){
                 stack.push(stack.pop() * stack.pop());
+                
             }
             else if(c.equals("/")){
                 int a = stack.pop();
