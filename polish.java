@@ -28,6 +28,8 @@ class polishSolution {
     }
 }
 public class polish{
+    int x = 5;
+    
     
 }
 
