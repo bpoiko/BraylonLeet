@@ -3,7 +3,7 @@ import java.util.*;
 
     
   class Solution {
-
+    
     public int diameterOfBinaryTree(TreeNode root) {
         int[] sol = new int[1];
         dfs(root, sol);

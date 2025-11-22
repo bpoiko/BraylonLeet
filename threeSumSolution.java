@@ -35,7 +35,7 @@ public class threeSumSolution{
                     //need a bigger sum
                     left++;
                 }else{
-                    // need a smaller sum
+                    // need a smaller sum   
                     right--;
                 }
                 
