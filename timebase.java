@@ -1,5 +1,5 @@
 import java.util.*;
-class solsol{
+class solssolol{
     class TimeMap {
     private Map<String, Map<Integer, List<String>>> keyStore;
     public TimeMap() {
