@@ -15,6 +15,20 @@ class Solution {
         }
         return false;
     }
+       public boolean hasCyclePointer(ListNode head) {
+       
+        ListNode slow = head;
+        ListNode fast = head;
+
+        while(fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+            if(slow == fast){
+                return true;
+            }
+        } //Solution ultizing fast and slow pointers, trying to learn proper implementation
+        return false;
+    }
 }
 public class cycle{
   //placeholder lol
