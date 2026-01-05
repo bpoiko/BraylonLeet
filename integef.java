@@ -1,4 +1,4 @@
-
+import java.util.*;
 class integef{
 
     public static boolean IsNumPal(int x){
@@ -17,6 +17,17 @@ class integef{
         }
         return true;
        
+    }
+
+    public static void evenOdd(List<Integer> A){
+        int nextEven = 0, nextOdd = A.size() - 1;
+        while(nextEven < nextOdd){
+            if(A.get(nextEven) % 2 == 0){
+                nextEven++;
+            }else{
+                Collections.swap(A,nextEven,nextOdd--);
+            }
+        }
     }
     public static void main(String[] args) {
         
