@@ -19,21 +19,20 @@ class minwin{
         int left = 0;
         int right = 1;
         Map<Character,Integer> secFreq = new HashMap<>();
-        while(left < right){
-            while(right < s.length()){
+        while(right < s.length()){
+            while(left < right){
                 
                 if(charFreq.getOrDefault(s.charAt(right),0) >= 1){
                 //nice
-               // secFreq.put(s.charAt)
-            
+                secFreq.put(s.charAt(right),secFreq.getOrDefault(s.charAt(right), 0)+1);
+                
             }
-
+                 right++;
             }
             //left really shouldnt move until right bumps into a match
             //
           
 
-            right++;
 
         }
         // once all characters found exit and return string..
