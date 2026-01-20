@@ -1,5 +1,6 @@
 
 class primi{
+
     private static long add(long a, long b){
         return b == 0 ? a : add(a ^ b, (a & b) << 1);
     }
