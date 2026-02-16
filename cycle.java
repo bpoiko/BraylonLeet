@@ -19,7 +19,9 @@ class Solution {
        
         ListNode slow = head;
         ListNode fast = head;
-
+        if(head == null){
+            return false; // redid this problem some months later and now there is a new edge case where the head is null
+        }
         while(fast != null && fast.next != null){
             slow = slow.next;
             fast = fast.next.next;
