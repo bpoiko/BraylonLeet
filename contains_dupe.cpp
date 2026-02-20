@@ -5,6 +5,7 @@ using namespace std;
 class Solution {
 public:
     bool hasDuplicate(vector<int>& nums) {
+// C time
         std::set<int> bell;
         for(int num : nums){
             auto it = bell.find(num);
